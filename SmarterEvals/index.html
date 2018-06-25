@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- Page Title -->
+	<title>SmarterEvals</title>
+	<meta name="author" content="Team 14">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  	<a class="navbar-brand" href="#">SmarterEvals</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+ 	</button>
+
+ 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    	<ul class="navbar-nav mr-auto">
+      		<li class="nav-item home_nav active" data-id='home'>
+        		<a class="nav-link" href="?report=home">Home</a>
+      		</li>
+			<li class="nav-item student_nav" data-id='student'>
+				<a class="nav-link" href="?report=student">Students</a>
+			</li>
+			<li class="nav-item professor_nav" data-id='proffesor'>
+				<a class="nav-link" href="?report=professor">Professors</a>
+			</li>
+			<li class="nav-item admin_nav" data-id="admin">
+				<a class="nav-link" href="?report=admin">Administrators</a>
+			</li>
+		</ul>
+  </div>
+</nav>
+
+<body>
+	<div class="container-fluid home">
+		<div class="row">
+			<h1 class="center">Weclome to SmarterEvals!</h1>
+		</div>
+
+		<div id="reportDiv">
+			
+		</div>
+
+	</div>
+
+
+
+
+	<div class="container-fluid hidden reports" id="adminReport">
+		<iframe width="1500" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiZGU3ZDBkZDgtNWFlOC00OTM1LThiYzQtN2ZmYTRhOGQyZWZkIiwidCI6ImE3MGE1ODNlLWRmNDEtNDRmYy1iZjQxLTUxNWQwNzJiMTk2YSIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+	</div>
+	<div class="container-fluid hidden reports"  id="student">
+		<iframe width="1500" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiMTdiODdjM2QtZWE4NC00OWFkLWIwMmItMjMwZjIzZTFhOThhIiwidCI6ImE3MGE1ODNlLWRmNDEtNDRmYy1iZjQxLTUxNWQwNzJiMTk2YSIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+	</div>
+	<div class="container-fluid hidden reports" id="professor">
+		<iframe width="1500" height="800" src="https://app.powerbi.com/view?r=eyJrIjoiYmIyMGIwNzMtZjk5MC00OTU3LWE3ZWUtZGZkNjQzODdjNjM1IiwidCI6ImE3MGE1ODNlLWRmNDEtNDRmYy1iZjQxLTUxNWQwNzJiMTk2YSIsImMiOjF9" frameborder="0" allowFullScreen="true"></iframe>
+	</div>
+</body>
+</html​>
